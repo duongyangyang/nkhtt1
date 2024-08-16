@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.toc-title {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 10px;
+    border: 1px solid black;
+    background: linear-gradient(to right, #EE9340, #4B5191);
+    border-radius: 15px;
+    margin: 5px 0;
+}
+
+.toc-title:hover {
+    background-color: #ccc;
+}
+
+.toc-children {
+    display: none;
+    padding-left: 20px;
+}
+
+.toc-children li {
+    background-color: #f9f9f9;
+    border: 3px solid;
+    border-image: linear-gradient(to left, #EE9340, #4B5191) 1;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 5px;
+}

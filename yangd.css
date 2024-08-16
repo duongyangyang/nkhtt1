@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Air Strip Arabic';
+    src: url('Air Strip Arabic.otf') format('opentype');
+}
+.multi-color {
+    color: #4B5191; /*xanh*/
+}
+
+.highlight {
+    color: #EE9340; /* vàng */
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+
+    height: 1000px;
+
+}
+
+h1 {
+    text-align: left;
+    font-family: "Air Strip Arabic", sans-serif;
+    font-size: 4em;
+    margin-top: 50px;
+    margin-bottom: 1px;
+    transition: transform 0.3s ease;
+    /*text-shadow: 
+        1px 1px 0 rgb(255, 255, 255),
+       -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+       -1px 1px 0 rgb(255, 255, 255)*/
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    margin-right: 20%;
+}
+
+.sidebar {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #ccc;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 1);
+}
+
+.file-border {
+    align-items: center;
+    border: 4px solid ;
+    border-image: linear-gradient(to right, #EE9340, #4B5191) 1;
+}
+
+
+
+.cell {
+    text-align: center;
+    width: auto;
+    height: 270px;
+    margin-top: 30px;
+}
+
+.cell img {
+    width: 170px; /* Thay đổi kích thước theo nhu cầu */
+    height: 170px; /* Thay đổi kích thước theo nhu cầu */
+    object-fit: cover;
+    border-radius: 50%;      /* Tạo hình tròn */
+    overflow: hidden;        /* Ẩn phần ngoài đường tròn nếu ảnh không phải là hình tròn */
+    justify-content: center; /* Căn giữa ảnh bên trong */
+    align-items: center;     /* Căn giữa ảnh bên trong */
+    transition: transform 1s ease;
+
+}
+
+.cell p {
+    font-family: "Air Strip Arabic", sans-serif;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.cell p1 {
+    font-family: "Air Strip Arabic", sans-serif;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.cell des {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+.toc {
+    text-align: left;
+    margin-left: 45px;
+    list-style: none;
+    padding: 0;
+}
+
+.toc > li {
+    position: relative;
+}
+
+.toc ul {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.toc li:hover > ul {
+    display: block;
+}
+
+
+
+.toc-title {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    width: 93%;
+    border: 4px solid ;
+    border-image: linear-gradient(to right, #EE9340, #4B5191) 1;
+}
+
+.toc-title:hover {
+    background-image: linear-gradient(to right, #EE9340, #4B5191) ;
+}
+
+.toc-children {
+    display: none;
+    padding-left: 20px;
+}
+
+.toc-children li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 5px;
+}
